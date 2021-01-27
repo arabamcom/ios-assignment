@@ -31,7 +31,7 @@ We are expecting you to implement a listing page and a detail page for the cars'
 
 
 ##### Listing Page Bonus #####
-* You can apply filters for the list page. For example,  `minDate `,  `maxDate`, or  `categoryId` etc. You can find it in our API docs. For the design concern, you can use bottomsheet, different fragment, or dialog for the filter page.
+* You can apply filters for the list page. For example,  `minDate `,  `maxDate`, or  `categoryId` etc. You can find it in our API docs. For the design concern, you can use a modal presentation view for the filter page.
 * You can apply sort with price, date, or year. We are supporting 3 different sort types.
 
 
