@@ -1,5 +1,5 @@
 
-<a href="https://play.google.com/store/apps/details?id=com.dogan.arabam&hl=tr"><img src="https://arbimg1.mncdn.com/assets/dist/img/tek-tur-large.gif"/>
+<a href="https://apps.apple.com/tr/app/arabam-com/id369111943?l=tr"><img src="https://arbimg1.mncdn.com/assets/dist/img/tek-tur-large.gif"/>
 </a>
 ## About Us ##
 
