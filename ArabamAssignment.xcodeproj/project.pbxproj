@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57558FF9278B3F2200268478 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57558FF7278B3F2200268478 /* HomeViewController.swift */; };
+		57558FFA278B3F2200268478 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57558FF8278B3F2200268478 /* HomeViewController.xib */; };
 		A106EFFE25BF1C1A0074FB10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A106EFFD25BF1C1A0074FB10 /* AppDelegate.swift */; };
-		A106F00225BF1C1A0074FB10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A106F00125BF1C1A0074FB10 /* ViewController.swift */; };
-		A106F00525BF1C1A0074FB10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A106F00325BF1C1A0074FB10 /* Main.storyboard */; };
 		A106F00725BF1C1B0074FB10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A106F00625BF1C1B0074FB10 /* Assets.xcassets */; };
 		A106F00A25BF1C1B0074FB10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A106F00825BF1C1B0074FB10 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57558FF7278B3F2200268478 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		57558FF8278B3F2200268478 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		A106EFFA25BF1C1A0074FB10 /* ArabamAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArabamAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A106EFFD25BF1C1A0074FB10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A106F00125BF1C1A0074FB10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A106F00425BF1C1A0074FB10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A106F00625BF1C1B0074FB10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A106F00925BF1C1B0074FB10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A106F00B25BF1C1B0074FB10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +35,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57558FEF278B3EA400268478 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A106F00625BF1C1B0074FB10 /* Assets.xcassets */,
+				A106F00B25BF1C1B0074FB10 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57558FF0278B3EB600268478 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				57558FF2278B3ED100268478 /* View */,
+				57558FF1278B3EBD00268478 /* Delegate */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		57558FF1278B3EBD00268478 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				A106EFFD25BF1C1A0074FB10 /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		57558FF2278B3ED100268478 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A106F00825BF1C1B0074FB10 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		57558FF3278B3EE800268478 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				57558FF4278B3EF100268478 /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		57558FF4278B3EF100268478 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				57558FF6278B3F0700268478 /* View */,
+				57558FF5278B3F0100268478 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		57558FF5278B3F0100268478 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				57558FF7278B3F2200268478 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		57558FF6278B3F0700268478 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57558FF8278B3F2200268478 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A106EFF125BF1C1A0074FB10 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +121,9 @@
 		A106EFFC25BF1C1A0074FB10 /* ArabamAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				A106EFFD25BF1C1A0074FB10 /* AppDelegate.swift */,
-				A106F00125BF1C1A0074FB10 /* ViewController.swift */,
-				A106F00325BF1C1A0074FB10 /* Main.storyboard */,
-				A106F00625BF1C1B0074FB10 /* Assets.xcassets */,
-				A106F00825BF1C1B0074FB10 /* LaunchScreen.storyboard */,
-				A106F00B25BF1C1B0074FB10 /* Info.plist */,
+				57558FF0278B3EB600268478 /* App */,
+				57558FF3278B3EE800268478 /* Screens */,
+				57558FEF278B3EA400268478 /* Supporting Files */,
 			);
 			path = ArabamAssignment;
 			sourceTree = "<group>";
@@ -123,7 +187,7 @@
 			files = (
 				A106F00A25BF1C1B0074FB10 /* LaunchScreen.storyboard in Resources */,
 				A106F00725BF1C1B0074FB10 /* Assets.xcassets in Resources */,
-				A106F00525BF1C1A0074FB10 /* Main.storyboard in Resources */,
+				57558FFA278B3F2200268478 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,22 +198,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A106F00225BF1C1A0074FB10 /* ViewController.swift in Sources */,
 				A106EFFE25BF1C1A0074FB10 /* AppDelegate.swift in Sources */,
+				57558FF9278B3F2200268478 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A106F00325BF1C1A0074FB10 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A106F00425BF1C1A0074FB10 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A106F00825BF1C1B0074FB10 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,7 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ArabamAssignment/Info.plist;
+				INFOPLIST_FILE = "ArabamAssignment/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,7 +348,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.arabam.assignment.ArabamAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ArabamAssignment/Info.plist;
+				INFOPLIST_FILE = "ArabamAssignment/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,7 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.arabam.assignment.ArabamAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
