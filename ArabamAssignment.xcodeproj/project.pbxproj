@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		57558FF9278B3F2200268478 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57558FF7278B3F2200268478 /* HomeViewController.swift */; };
 		57558FFA278B3F2200268478 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57558FF8278B3F2200268478 /* HomeViewController.xib */; };
+		57E1E1A9278CC5C800A0B00E /* VehicleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E1E1A7278CC5C800A0B00E /* VehicleTableViewCell.swift */; };
+		57E1E1AA278CC5C800A0B00E /* VehicleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57E1E1A8278CC5C800A0B00E /* VehicleTableViewCell.xib */; };
 		A106EFFE25BF1C1A0074FB10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A106EFFD25BF1C1A0074FB10 /* AppDelegate.swift */; };
 		A106F00725BF1C1B0074FB10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A106F00625BF1C1B0074FB10 /* Assets.xcassets */; };
 		A106F00A25BF1C1B0074FB10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A106F00825BF1C1B0074FB10 /* LaunchScreen.storyboard */; };
@@ -17,6 +19,8 @@
 /* Begin PBXFileReference section */
 		57558FF7278B3F2200268478 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		57558FF8278B3F2200268478 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		57E1E1A7278CC5C800A0B00E /* VehicleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTableViewCell.swift; sourceTree = "<group>"; };
+		57E1E1A8278CC5C800A0B00E /* VehicleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleTableViewCell.xib; sourceTree = "<group>"; };
 		A106EFFA25BF1C1A0074FB10 /* ArabamAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArabamAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A106EFFD25BF1C1A0074FB10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A106F00625BF1C1B0074FB10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 		57558FF4278B3EF100268478 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				57E1E1A5278CC55700A0B00E /* Cells */,
 				57558FF6278B3F0700268478 /* View */,
 				57558FF5278B3F0100268478 /* Controller */,
 			);
@@ -100,6 +105,23 @@
 				57558FF8278B3F2200268478 /* HomeViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		57E1E1A5278CC55700A0B00E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				57E1E1A6278CC56100A0B00E /* VehicleTableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		57E1E1A6278CC56100A0B00E /* VehicleTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				57E1E1A7278CC5C800A0B00E /* VehicleTableViewCell.swift */,
+				57E1E1A8278CC5C800A0B00E /* VehicleTableViewCell.xib */,
+			);
+			path = VehicleTableViewCell;
 			sourceTree = "<group>";
 		};
 		A106EFF125BF1C1A0074FB10 = {
@@ -185,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57E1E1AA278CC5C800A0B00E /* VehicleTableViewCell.xib in Resources */,
 				A106F00A25BF1C1B0074FB10 /* LaunchScreen.storyboard in Resources */,
 				A106F00725BF1C1B0074FB10 /* Assets.xcassets in Resources */,
 				57558FFA278B3F2200268478 /* HomeViewController.xib in Resources */,
@@ -198,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57E1E1A9278CC5C800A0B00E /* VehicleTableViewCell.swift in Sources */,
 				A106EFFE25BF1C1A0074FB10 /* AppDelegate.swift in Sources */,
 				57558FF9278B3F2200268478 /* HomeViewController.swift in Sources */,
 			);
