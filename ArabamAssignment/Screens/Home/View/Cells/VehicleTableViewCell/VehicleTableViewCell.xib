@@ -25,8 +25,8 @@
                             <constraint firstAttribute="height" constant="72" id="Kfz-LA-OYe"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxP-su-Xxw">
-                        <rect key="frame" x="112" y="8" width="200" height="47"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxP-su-Xxw">
+                        <rect key="frame" x="112" y="8" width="200" height="17"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -63,7 +63,6 @@
                     <constraint firstItem="0m1-xn-ml1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="56s-Oa-RlZ"/>
                     <constraint firstAttribute="bottom" secondItem="0m1-xn-ml1" secondAttribute="bottom" constant="8" id="C8W-qN-nry"/>
                     <constraint firstAttribute="bottom" secondItem="MAH-bQ-Wdt" secondAttribute="bottom" constant="8" id="Exi-Pg-Ma8"/>
-                    <constraint firstItem="XS1-0n-Mgo" firstAttribute="top" relation="lessThanOrEqual" secondItem="IxP-su-Xxw" secondAttribute="bottom" constant="8" symbolic="YES" id="PhV-7R-59T"/>
                     <constraint firstAttribute="trailing" secondItem="XS1-0n-Mgo" secondAttribute="trailing" constant="8" id="Y7b-32-ZRQ"/>
                     <constraint firstItem="MAH-bQ-Wdt" firstAttribute="leading" secondItem="0m1-xn-ml1" secondAttribute="trailing" constant="8" symbolic="YES" id="bBn-tI-JES"/>
                     <constraint firstItem="IxP-su-Xxw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="cLO-IQ-HkB"/>
