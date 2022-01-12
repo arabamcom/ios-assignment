@@ -16,6 +16,7 @@ protocol HomeViewModelProtocol {
     var onDownloadVehiclePhotoFailure: ((Error) -> Void)? { set get }
     func fetchVehicleList()
     func configureVehicleTableViewCell(_ cell: VehicleTableViewCell, forIndexPath indexPath: IndexPath)
+    func vehicleId(for indexPath: IndexPath) -> Int
 }
 
 final class HomeViewModel: BaseViewModel, HomeViewModelProtocol {
@@ -84,5 +85,9 @@ final class HomeViewModel: BaseViewModel, HomeViewModelProtocol {
                 self.onDownloadVehiclePhotoSucceed?(indexPath)
             }
         })
+    }
+    
+    func vehicleId(for indexPath: IndexPath) -> Int {
+        vehicleList[indexPath.row].id
     }
 }

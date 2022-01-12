@@ -7,15 +7,21 @@
 
 import UIKit
 
-final class HomeViewController: UIViewController {
+final class HomeViewController: BaseViewController {
     private let viewModel = HomeViewModel()
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Home"
-        tableView.register(UINib(nibName: "VehicleTableViewCell", bundle: nil), forCellReuseIdentifier: "VehicleTableViewCell")
+        title = "Araçlar"
+        
+        tableView.register(UINib(nibName: "VehicleTableViewCell", bundle: nil),
+                           forCellReuseIdentifier: "VehicleTableViewCell")
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapGestureRecognized(_:)))
+        tableView.addGestureRecognizer(tapGestureRecognizer)
+        
         viewModel.fetchVehicleList()
         
         viewModel.onFetchVehicleListSucceed = {
@@ -31,13 +37,14 @@ final class HomeViewController: UIViewController {
         }
     }
     
-    private func showError(_ error: Error) {
-        let alertController = UIAlertController(title: "Hata",
-                                                message: "Servis isteği sırasında bir hata oluştu.\n Hata: \(error.localizedDescription)",
-                                                preferredStyle: .alert)
-        let defaultAction = UIAlertAction(title: "TAMAM", style: .default)
-        alertController.addAction(defaultAction)
-        present(alertController, animated: true)
+    @objc
+    private func didTapGestureRecognized(_ sender: UITapGestureRecognizer) {
+        let tapLocation = sender.location(in: tableView)
+        if let indexPath = tableView.indexPathForRow(at: tapLocation) {
+            let detailViewModel = DetailViewModel(id: viewModel.vehicleId(for: indexPath))
+            let detailViewController = DetailViewController(viewModel: detailViewModel)
+            navigationController?.pushViewController(detailViewController, animated: true)
+        }
     }
 }
 
