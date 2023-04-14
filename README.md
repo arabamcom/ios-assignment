@@ -78,7 +78,7 @@ curl -X GET "http://sandbox.arabamd.com/api/v1/detail?id=15207658" -H "accept: t
 
 ### Tech Tips
 
-Our development language is Swift but we have legacy Objective-C classes. We expect you to code with Swift but if you feel more comfortable with Objective-C, feel free to use it. App should work above iOS 11.
+Our development language is Swift but we have legacy Objective-C classes. We expect you to code with Swift but if you feel more comfortable with Objective-C, feel free to use it. App should work above iOS 13.
 
 We expect you to use AutoLayout while developing the interface. You can use Storyboards or NIBs for the interface. If you want to code the layout constraints, you can use 3rd party libraries such as TinyConstraints, SnapKit etc.
 
